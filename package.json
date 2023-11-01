@@ -1,0 +1,21 @@
+{
+  "name": "tarea5_ayd1",
+  "version": "1.0.0",
+  "description": "para fortalezer los conocimientos adquiridos en el tema de pruebas se le solicita a usted como estudiante realizar una serie de pruebas que complementen el almenos el 90% de las lineas cubiertas.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest --ci --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
