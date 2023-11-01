@@ -20,3 +20,10 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: true
           verbose: true
+  build: #job-name
+    needs: test
+    runs-on: ubuntu-latest
+    steps: #define the steps that will execute
+      - name: check-repo-code
+        uses: actions/checkout@v3
+      - run: echo "$(cat hello_world.txt)"
