@@ -1,5 +1,5 @@
 const moviesRouter = require('express').Router();
-
+//this is a test
 let movies = [
     {
         "id": 1,
@@ -7,7 +7,7 @@ let movies = [
         "year": 1994,
         "genre": "drama",
         "summary": "nothing to show here"
-        
+
     },
     {
         "id": 2,
@@ -23,7 +23,7 @@ let movies = [
         "genre": "action",
         "summary": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
     },
-  ]
+]
 
 
 moviesRouter.get('/', (req, res) => {
@@ -44,9 +44,9 @@ moviesRouter.get('/:id', (req, res) => {
 moviesRouter.delete('/:id', (request, response) => {
     const id = Number(request.params.id)
     movies = movies.filter(movie => movie.id !== id)
-  
+
     response.status(204).end()
-  })
-    
+})
+
 
 module.exports = moviesRouter;
